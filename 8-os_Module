@@ -1,0 +1,32 @@
+/* const amount = 12;
+if (amount < 10) {
+    console.log("This is a small number!")
+} else {
+    console.log("This is a big number!")
+}
+
+console.log("Hey, its my first node app!") */
+
+/* const os = require("os");
+ //info about current user
+
+ const user = os.userInfo();
+ console.log(user);
+
+//METHOD RETURN RUNTIME IN SECONDS
+
+console.log(`The system upptime is: ${os.uptime()}`);
+ */
+const os = require("os");
+
+const user = os.userInfo();
+console.log(user);
+
+const currentOs = {
+    name:os.type(),
+    release:os.release(),
+    totelMem:os.totalmem(),
+    freeMem:os.freemem(),
+}
+
+console.log(currentOs);
